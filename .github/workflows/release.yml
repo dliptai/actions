@@ -1,9 +1,9 @@
 name: release
 
 on:
-    release:
-      types:
-        - published
+  release:
+    types:
+      - published
 
 jobs:
   release:
@@ -19,3 +19,4 @@ jobs:
         with:
           upload_url: ${{ github.event.release.upload_url }}
           asset_path: assets.txt
+          asset_name: something_else.txt
